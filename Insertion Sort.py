@@ -26,14 +26,14 @@ def insertionSort1(n, arr):
             
             for y in arr:
                 print(y, end = " ")
-
+                
             print()
 
             if arr[x] == start:
                 arr[0] = final
                 
                 for y in arr:
-                    print(y, end = " ")
+                    print(y, end=" ")
         else:
             arr[x + 1] = final
             
