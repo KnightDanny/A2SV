@@ -12,11 +12,11 @@ class Solution(object):
             for y in range(x+1,len(split)):
             
                 if split[y][-1] < split[idx][-1]:
-                    idx = j
+                    idx = y
             
-            if i != idx:
+            if x != idx:
                 split[idx], split[x] = split[x], split[idx]
             
-            original_sen += split[i][:-1] + ' '
+            original_sen += split[x][:-1] + ' '
         
         return (original_sen[:-1])
