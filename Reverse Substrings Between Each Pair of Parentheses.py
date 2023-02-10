@@ -1,7 +1,6 @@
 class Solution:
   def reverseParentheses(self, s):
     output , stack , match = [] , [] , {}
-
     for i, x in enumerate(s):
       if x == '(':
         stack.append(i)
@@ -9,7 +8,6 @@ class Solution:
         j = stack.pop()
         match[i] = j
         match[j] = i
-
     i = 0
     y = 1
     while i < len(s):
