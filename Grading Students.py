@@ -16,11 +16,8 @@ import sys
 def gradingStudents(grades):
     x = []
     for grade in grades:
-        if grade >= 38:
-            inc = grade % 5
-            
-            if inc >=3:
-                grade += (5-inc)
+        if grade >= 38: inc = grade % 5
+            if inc >=3: grade += (5 - inc)
         x.append(grade)
     return x
     
