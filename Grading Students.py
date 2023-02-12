@@ -14,12 +14,12 @@ import sys
 #a
 
 def gradingStudents(grades):
-    x = []
+    output = []
     for grade in grades:
         if grade >= 38: inc = grade % 5
-            if inc >=3: grade += (5 - inc)
-        x.append(grade)
-    return x
+            if inc >= 3: grade += (5 - inc)
+        output.append(grade)
+    return output
     
 
 if __name__ == '__main__':
